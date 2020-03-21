@@ -1,0 +1,21 @@
+var English = "Hello world !";
+var Arabic = "أهلا أيها العالم";
+var Indonesian = "Halo, dunia !";
+var Italian = "ciao, mondo!";
+var Spanish = "Hola, mundo";
+var French = "Bonjour le monde!";
+var Dutch = "Hallo Wereld!";
+var Turkish = "Selam Dünya!";
+var chinese = "你好，世界!";
+var japanese = "こんにちは世界";
+
+console.log(English);
+console.log(Arabic.split("").reverse().join(""));
+console.log(Indonesian);
+console.log(Italian);
+console.log(Spanish);
+console.log(French);
+console.log(Dutch);
+console.log(Turkish);
+console.log(chinese);
+console.log(japanese);
