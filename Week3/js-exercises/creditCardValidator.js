@@ -11,7 +11,8 @@ function main(){
 
 function CreditCardValidator(cardNumber) {
     //check the mentioned criteria
-    if (cardNumber.length == 16 
+    if (cardNumber.length == 16
+        && sum(cardNumber) > 16
         && isNumber(cardNumber) 
         && ((cardNumber % 10) % 2 === 0) 
         && isSameDigit(cardNumber) )
@@ -21,6 +22,17 @@ function CreditCardValidator(cardNumber) {
         console.log("Your card Number is not valid");
 }
 
+// a function that returns the digits sum 
+function sum(value){
+    
+    let sum = 0;
+
+    while (value) {
+        sum += value % 10;
+        value = Math.floor(value / 10);
+    }
+    return sum;
+}
 // a function that checks the digit of the card number if there are a letter or char that is not a number
 function isNumber(card){
     let num = [0,1,2,3,4,5,6,7,8,9];
@@ -43,3 +55,4 @@ function isSameDigit(card){
 }
 
 main();
+
